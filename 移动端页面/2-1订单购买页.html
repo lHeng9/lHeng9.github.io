@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-1订单购买页</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .top {
+            position: relative;
+            height: 1.28rem;
+        }
+        
+        .top .bg {
+            height: 1.28rem;
+        }
+        
+        .top .lf-arrow {
+            width: .2rem;
+            position: absolute;
+            top: 50%;
+            left: .2rem;
+        }
+        
+        .top .title {
+            font-size: 0.36rem;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.12rem;
+            margin-left: -0.72rem;
+            width: 1.44rem;
+        }
+        
+        .main {
+            margin-top: .38rem;
+        }
+        
+        .main img {
+            width: 89%;
+            margin: 0 .32rem 10px .5rem;
+        }
+        
+        .box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 93%;
+        }
+        
+        .box .item {
+            width: 42%;
+            /* height: 132.5px; */
+            /* border: 1px solid #ddd; */
+            margin-bottom: 15px;
+            /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
+            /* border-radius: 10px; */
+            background-color: transparent;
+        }
+        
+        .boxbtm {
+            text-align: center;
+            font-size: .22rem;
+            color: rgb(135, 135, 135);
+            margin-top: .3rem;
+            border-bottom: 1px solid rgb(225, 225, 225);
+        }
+        
+        .boxbtm span {
+            margin-bottom: .3rem;
+            display: block;
+        }
+        
+        .btm {
+            width: 85%;
+            margin-top: .3rem;
+            padding-bottom: .3rem;
+            position: relative;
+        }
+        
+        .btm .lf {
+            float: left;
+            width: 30%;
+        }
+        
+        .btm p:nth-child(1) {
+            font-size: .22rem;
+            color: rgb(135, 135, 135);
+        }
+        
+        .btm p:nth-child(2) {
+            font-size: .36rem;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .btm .rt {
+            float: right;
+            width: 1.51rem;
+        }
+        
+        .btm .rt button {
+            width: 1.51rem;
+            height: 0.67rem;
+            color: #fff;
+            font-size: .36rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.67rem;
+            background-color: rgb(105, 190, 73);
+            border-radius: 8px;
+            border: 0;
+        }
+        
+        .btm .rt button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .btm .rt button a:active {}
+        
+        .mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        .mask .content {
+            width: 80%;
+            height: 6.47rem;
+            background-color: #fff;
+            position: fixed;
+            top: 50%;
+            margin-top: -3.23rem;
+            left: 50%;
+            margin-left: -40%;
+        }
+        
+        .mask .content .title {
+            display: block;
+            text-align: center;
+            font-size: .42rem;
+            font-weight: bold;
+            margin: .6rem 0 .4rem 0;
+        }
+        
+        .mask .content .main {
+            width: 90%;
+            height: 3.3rem;
+            background-color: rgb(235, 235, 235);
+        }
+        
+        .mask .content p {
+            margin: .3rem 0;
+            text-align: center;
+            color: rgb(135, 135, 135);
+        }
+        
+        .mask .content button {
+            font-size: .42rem;
+            color: rgb(0, 194, 0);
+            height: 52px;
+            line-height: 52px;
+            background-color: #fff;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+        
+        .mask .content button a {
+            text-decoration: none;
+            color: rgb(0, 194, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <img src="img/bg.png" alt=""> -->
+        <div class="lf-arrow">
+            <a href="1-首页.html">
+                <img src="img/lf-arrow.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            购买礼盒
+        </div>
+
+    </div>
+    <div class="main">
+        <img src="img/main.png" alt="">
+    </div>
+    <div class="box">
+        <div class="item">
+            <img src="img/box1.png" alt="">
+        </div>
+        <div class="item"><img src="img/box2.png" alt=""></div>
+        <div class="item"><img src="img/box3.png" alt=""></div>
+        <div class="item"><img src="img/box4.png" alt=""></div>
+        <div class="item"><img src="img/box5.png" alt=""></div>
+        <div class="item"><img src="img/box6.png" alt=""></div>
+        <div class="item"><img src="img/box7.png" alt=""></div>
+        <div class="item"><img src="img/box8.png" alt=""></div>
+
+    </div>
+    <div class="boxbtm">
+        <span>
+                *暂不支持的收货地区：新疆、西藏、青海、港澳台
+        </span>
+    </div>
+    <div class="btm clear">
+        <div class="lf">
+            <p>共9件商品</p>
+            <p>￥0.00</p>
+        </div>
+        <div class="rt">
+
+            <button id='btn1'>购买 </button>
+
+        </div>
+    </div>
+    <div class="mask">
+        <div class="content">
+            <span class="title">
+                幸运礼品
+            </span>
+            <div class="main"></div>
+            <p>每个品质的礼品都有可能升级为幸运礼品</p>
+            <a href="2-3赠送页面.html">
+                <button id="btn2">
+                知道了
+            </button>
+            </a>
+        </div>
+    </div>
+    <script>
+        var btn1 = document.getElementById('btn1');
+        var mask = document.getElementsByClassName('mask')[0];
+        var btn2 = document.getElementById('btn2');
+        btn1.onclick = function() {
+            mask.style.display = 'block';
+        }
+        btn2.onclick = function() {
+            mask.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

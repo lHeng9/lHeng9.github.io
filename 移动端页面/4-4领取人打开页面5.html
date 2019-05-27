@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4-4领取人打开页面</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .top {
+            position: relative;
+            height: 1.28rem;
+        }
+        
+        .top .bg {
+            height: 1.28rem;
+        }
+        
+        .top .lf-arrow {
+            width: .2rem;
+            position: absolute;
+            top: 50%;
+            left: .2rem;
+        }
+        
+        .top .title {
+            font-size: 0.36rem;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.12rem;
+            margin-left: -0.36rem;
+            width: .72rem;
+        }
+        
+        .main {
+            margin: .38rem auto 0;
+            width: 2.49rem;
+            position: relative;
+        }
+        
+        .main img {
+            width: 2.49rem;
+        }
+        
+        .main .already {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1.96rem;
+            height: 1.96rem;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .main .already img {
+            width: 1.96rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        .text {
+            text-align: center;
+            font-size: .3rem;
+            font-weight: bold;
+            margin: .3rem 0;
+            color: rgb(51, 51, 51)
+        }
+        
+        .text .p2 {
+            font-size: .36rem;
+            margin-top: .3rem;
+        }
+        
+        .list {
+            padding-top: 0.3rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 90%;
+            font-size: .28rem;
+            color: rgb(135, 135, 135);
+            margin-bottom: .3rem;
+        }
+        
+        .list li {
+            margin-bottom: .3rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .list li span {
+            width: 50%;
+            flex: 1;
+        }
+        
+        .list li span img {
+            width: .38rem;
+            vertical-align: text-bottom
+        }
+        
+        .list li span:nth-child(1) {
+            float: left;
+            margin-left: .3rem;
+        }
+        
+        .list li span:nth-child(2) {
+            float: right;
+            text-align: right;
+            margin-right: .3rem;
+        }
+        
+        .btm {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            font-size: .22rem;
+            color: rgb(135, 135, 135);
+        }
+        
+        .btm .rt {
+            text-align: right;
+        }
+        
+        .btm .rt span {
+            color: rgb(247, 190, 17)
+        }
+        
+        .btn {
+            margin-top: 2.5rem;
+            margin-bottom: .8rem;
+            width: 90%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <img src="img/bg.png" alt=""> -->
+        <div class="lf-arrow">
+            <a href="4-1我收到的.html">
+                <img src="img/lf-arrow.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            礼吓
+        </div>
+
+    </div>
+    <div class="main">
+        <img src="img/3-main.png" alt="">
+        <!-- <div class="already">
+            <img src="img/text.png" alt="">
+        </div> -->
+
+    </div>
+    <div class="text">
+        <p class="p1"> 年会系列礼盒</p>
+        <p class="p2">祝大家新春快乐</p>
+    </div>
+    <div class="list">
+        <li class="clear">
+            <span>赠礼好友</span>
+            <span><img src="img/gift3.png" alt=""> 拉布丶</span>
+        </li>
+        <li class="clear">
+            <span>赠礼时间</span>
+            <span>2018-01-05 23：59</span>
+        </li>
+
+        <li class="clear">
+            <span>盒内礼品</span>
+            <span>99件</span>
+        </li>
+    </div>
+    <div class="btm">
+        <p>礼品可能升级为幸运礼品</p>
+        <p class="rt">本期幸运礼品：<span>IphoneX</span> </p>
+
+    </div>
+    <a href="4-5领取人打开页面-2.html">
+
+        <img class="btn" src="img/btnbuy.png" alt="">
+
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-3赠送页面</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .top {
+            position: relative;
+            height: 1.28rem;
+        }
+        
+        .top .bg {
+            height: 1.28rem;
+        }
+        
+        .top .lf-arrow {
+            width: .2rem;
+            position: absolute;
+            top: 50%;
+            left: .2rem;
+        }
+        
+        .top .title {
+            font-size: 0.36rem;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.12rem;
+            margin-left: -0.72rem;
+            width: 1.44rem;
+        }
+        
+        .main {
+            margin: .38rem auto 0;
+            width: 2.49rem;
+            position: relative;
+        }
+        
+        .main img {
+            width: 2.49rem;
+        }
+        
+        .main .already {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1.96rem;
+            height: 1.96rem;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .main .already img {
+            width: 1.96rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        .text {
+            text-align: center;
+            font-size: .42rem;
+            font-weight: bold;
+            margin: .3rem 0;
+        }
+        
+        .list {
+            padding-top: 0.3rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 90%;
+            font-size: .28rem;
+            color: rgb(135, 135, 135);
+            margin-bottom: .3rem;
+        }
+        
+        .list li {
+            margin-bottom: .3rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .list li span {
+            width: 50%;
+            flex: 1;
+        }
+        
+        .list li span:nth-child(1) {
+            float: left;
+            margin-left: .3rem;
+        }
+        
+        .list li span:nth-child(2) {
+            float: right;
+            text-align: right;
+            margin-right: .3rem;
+        }
+        
+        .btm {
+            width: 90%;
+        }
+        
+        .btm span {
+            color: rgb(87, 107, 149);
+            font-size: .24rem;
+        }
+        
+        .btm .btn {
+            margin-top: .75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <img src="img/bg.png" alt=""> -->
+        <div class="lf-arrow">
+            <a href="2-1订单购买页.html">
+                <img src="img/lf-arrow.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            购买礼盒
+        </div>
+
+    </div>
+    <div class="main">
+        <img src="img/3-main.png" alt="">
+        <div class="already">
+            <img src="img/text.png" alt="">
+        </div>
+
+    </div>
+    <div class="text">
+        年会系列礼盒
+    </div>
+    <div class="list">
+        <li class="clear">
+            <span>礼盒价格</span>
+            <span>198元</span>
+        </li>
+        <li class="clear">
+            <span>盒内礼品</span>
+            <span>52件</span>
+        </li>
+        <li class="clear">
+            <span>礼品总价值</span>
+            <span>3000~5000元</span>
+        </li>
+    </div>
+    <div class="btm">
+        <span>你的赠言</span>
+        <img src="img/3-btm.png" alt="">
+        <a href="2-4赠送成功.html">
+            <img class="btn" src="img/3-btn.png" alt="">
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4-1我收到的</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .top {
+            position: relative;
+            height: 1.28rem;
+        }
+        
+        .top .bg {
+            height: 1.28rem;
+        }
+        
+        .top .lf-arrow {
+            width: .2rem;
+            position: absolute;
+            top: 50%;
+            left: .2rem;
+        }
+        
+        .top .title {
+            font-size: 0.36rem;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.12rem;
+            margin-left: -0.72rem;
+            width: 1.44rem;
+        }
+        
+        .main {
+            margin-top: .3rem;
+            width: 6.6rem;
+            position: relative;
+            border: 1px solid #ddd;
+            height: 4rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ddd;
+        }
+        
+        .main .img {
+            width: .64rem;
+            margin-top: .42rem;
+        }
+        
+        .main>p:nth-child(2) {
+            font-size: .3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: .3rem;
+        }
+        
+        .main>p:nth-child(3) {
+            font-size: .6rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: .3rem;
+        }
+        
+        .main>p:nth-child(4) {
+            font-size: .3rem;
+            text-align: center;
+            margin-top: .3rem;
+        }
+        
+        .main p span {
+            color: rgb(105, 190, 73);
+        }
+        
+        .main .mainbtm {
+            display: flex;
+            justify-content: space-around
+        }
+        
+        .main .mainbtm .lf,
+        .main .mainbtm .rt {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .main .mainbtm .f1 {
+            font-size: 0.36rem;
+            color: #aaa;
+        }
+        
+        .main .mainbtm .f2 {
+            font-size: 0.24rem;
+            color: #aaa;
+        }
+        
+        .card {
+            width: 6.6rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: .3rem;
+            color: rgb(51, 51, 51);
+        }
+        
+        .card .right {
+            text-align: right;
+        }
+        
+        .card .left {
+            margin-left: .3rem;
+            padding-top: .3rem;
+        }
+        
+        .card .right {
+            margin-right: .3rem;
+            padding-top: .3rem;
+        }
+        
+        .card p {
+            margin-bottom: .4rem;
+        }
+        
+        .card .p1 {
+            font-size: .3rem;
+            font-weight: bold;
+        }
+        
+        .card .p2 {
+            font-size: .24rem;
+        }
+        
+        .card .p2 img {
+            width: .66rem;
+            vertical-align: middle;
+        }
+        
+        .card .p3,
+        .card .p4 {
+            font-size: .24rem;
+        }
+        
+        .card .p3 span {
+            color: rgb(247, 190, 17);
+        }
+        
+        .card .p3 .sp1 {
+            color: rgb(105, 190, 73)
+        }
+        
+        .card .p23 span {
+            color: rgb(105, 190, 73)
+        }
+        
+        .card .p4 {
+            margin-top: .6rem;
+        }
+        
+        .btm {
+            font-size: .24rem;
+            color: rgb(87, 107, 149);
+            text-align: center;
+            margin-top: .6rem;
+            margin-bottom: .4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <img src="img/bg.png" alt=""> -->
+        <div class="lf-arrow">
+            <a href="1-首页.html">
+                <img src="img/lf-arrow.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            我收到的
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="img">
+            <img src="img/gift2.png" alt="">
+
+        </div>
+        <p>收礼总价值</p>
+        <p>10001</p>
+        <p>收到礼盒数量 <span>100</span> 个</p>
+    </div>
+    <div class="card">
+        <div class="left">
+            <p class="p1">男神专属礼盒</p>
+            <p class="p2">
+                <img src="img/bursh.png" alt="">
+                <span> 小米电动牙刷1支</span>
+            </p>
+        </div>
+        <div class="right">
+            <p class="p3"><span>待发货</span></p>
+            <p class="p4">赠礼人：<b>拉布丶</b></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="left">
+            <p class="p1">男神专属礼盒</p>
+            <p class="p2">
+                <img src="img/bursh.png" alt="">
+                <span> 小米电动牙刷1支</span>
+            </p>
+        </div>
+        <div class="right">
+            <p class="p3"><span>待发货<br>(未填地址)</span></p>
+            <p class="p4">赠礼人：<b>拉布丶</b></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="left">
+            <p class="p1">男神专属礼盒</p>
+            <p class="p2">
+                <img src="img/bursh.png" alt="">
+                <span> 小米电动牙刷1支</span>
+            </p>
+        </div>
+        <div class="right">
+            <p class="p3"><span class="sp1">已发货</span></p>
+            <p class="p4">赠礼人：<b>拉布丶</b></p>
+        </div>
+    </div>
+
+    <div class="btm">
+        联系客服
+    </div>
+    <script>
+        var card1 = document.getElementsByClassName('card')[0];
+        var card2 = document.getElementsByClassName('card')[1];
+
+        var card3 = document.getElementsByClassName('card')[2];
+
+        card1.onclick = function() {
+            window.location.href = '4-4领取人打开页面2.html'
+        }
+        card2.onclick = function() {
+            window.location.href = '4-4领取人打开页面3.html'
+        }
+        card3.onclick = function() {
+            window.location.href = '4-4领取人打开页面5.html'
+        }
+    </script>
+</body>
+
+</html>

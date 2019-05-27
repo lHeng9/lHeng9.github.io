@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4-7领取人打开页面2</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .top {
+            position: relative;
+            height: 1.28rem;
+        }
+        
+        .top .bg {
+            height: 1.28rem;
+        }
+        
+        .top .lf-arrow {
+            width: .2rem;
+            position: absolute;
+            top: 50%;
+            left: .2rem;
+        }
+        
+        .top .title {
+            font-size: 0.36rem;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.12rem;
+            margin-left: -0.72rem;
+            width: 1.44rem;
+        }
+        
+        .main {
+            margin-top: .3rem;
+        }
+        
+        .main img {
+            width: 5.6rem;
+            display: block;
+        }
+        
+        .main p {
+            text-align: center;
+            font-size: .3rem;
+            margin-top: .3rem;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: .24rem;
+            background-color: rgb(248, 248, 248);
+            color: rgb(135, 135, 135);
+            margin-top: .4rem;
+        }
+        
+        .nav>p:nth-child(1) {
+            flex: 2;
+            margin-left: .6rem;
+        }
+        
+        .nav>p:nth-child(2) {
+            text-align: right;
+            flex: 8;
+            margin-right: .7rem;
+        }
+        
+        .box {}
+        
+        .box li {
+            padding: .4rem auto .3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            font-size: .28rem;
+            color: rgb(135, 135, 135)
+        }
+        
+        .box li>p:nth-child(1) {
+            flex: 2;
+            margin-left: .6rem;
+            margin-top: .4rem;
+            margin-bottom: .3rem;
+            text-align: left;
+        }
+        
+        .box li>p:nth-child(2) {
+            flex: 4;
+            margin-right: .7rem;
+            margin-top: .4rem;
+            margin-bottom: .3rem;
+            text-align: right;
+        }
+        
+        .select {
+            position: relative
+        }
+        
+        .select img {
+            position: absolute;
+            top: .5rem;
+            right: .7rem;
+            width: .14rem;
+            vertical-align: middle;
+        }
+        
+        .btm {
+            font-size: .22rem;
+            color: rgb(135, 135, 135);
+            text-align: center;
+            margin-top: .9rem;
+        }
+        
+        .sub {
+            width: 90%;
+            display: block;
+            margin-top: .3rem;
+        }
+        
+        .active {
+            font-size: .28rem;
+            color: rgb(9, 187, 7);
+            font-weight: bold
+        }
+        
+        .over {
+            width: 90%;
+            display: block;
+            margin-top: .6rem;
+        }
+        
+        .btm {
+            font-size: .26rem;
+            color: rgb(87, 107, 149);
+            text-align: center;
+            margin-top: .6rem;
+            margin-bottom: .3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <img src="img/bg.png" alt=""> -->
+        <div class="lf-arrow">
+            <a href="4-5领取人打开页面-2.html">
+                <img src="img/lf-arrow.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            我的礼品
+        </div>
+    </div>
+    <div class="main">
+        <img src="img/4-5main.png" alt="">
+        <p>获得小米电动牙刷*1</p>
+    </div>
+    <div class="nav">
+        <p>收货信息</p>
+        <p></p>
+    </div>
+    <div class="box">
+        <li>
+            <p>联系人</p>
+            <p>拉布丶</p>
+        </li>
+        <li class="line">
+            <p>手机号</p>
+            <p>15938833799</p>
+        </li>
+        <li class="line select">
+            <p>选择地区</p>
+            <p>北京市 北京 通州区 物资学院路 新建村三期低层一单元 113</p>
+        </li>
+
+    </div>
+    <div class="nav">
+        <p>物流信息</p>
+        <p></p>
+    </div>
+    <div class="box">
+        <li>
+            <p>发货状态</p>
+            <p class="active">已发货</p>
+        </li>
+        <li class="line">
+            <p>物流公司</p>
+            <p>顺丰快递</p>
+        </li>
+        <li class="line select">
+            <p>运单单号</p>
+            <p>1231456892356</p>
+        </li>
+
+    </div>
+    <img class="over" src="img/over.png" alt="">
+    <p class="btm">联系客服</p>
+    <script>
+        var over = document.getElementsByClassName('over')[0]
+        over.onclick = function() {
+            window.location.href = '4-1我收到的.html'
+        }
+    </script>
+</body>
+
+</html>
