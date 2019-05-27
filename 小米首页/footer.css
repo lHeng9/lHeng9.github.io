@@ -1,0 +1,220 @@
+footer {
+    width: 100%;
+    background-color: #fff;
+}
+
+footer .container {
+    width: 1226px;
+}
+
+footer .container .head {
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer .container .head ul li {
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #616161;
+    border-left: 1px solid #e0e0e0;
+}
+
+footer .container .head ul li span {
+    font-size: 24px;
+}
+
+footer .container .head ul .first {
+    border: 0;
+}
+
+footer .container .body {
+    padding: 40px 0;
+}
+
+footer .container .body dl {
+    float: left;
+    width: 160px;
+    height: 112px;
+}
+
+footer .container .body dl dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+
+footer .container .body dl dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #757575;
+}
+
+footer .container .body dl dd:hover {
+    color: #ff6700
+}
+
+footer .container .body div {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+
+footer .container .body .phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+
+footer .container .body p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+
+footer .container .body a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ff6700;
+    text-align: center;
+    color: #ff6700;
+    background-color: #fff;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.info {
+    background-color: #fafafa;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 12px;
+    color: #333;
+}
+
+.info .content {
+    width: 1226px;
+    position: relative;
+    margin: auto;
+}
+
+.info .content .logo {
+    width: 57px;
+    height: 57px;
+    background: url(../小米首页/img/mi-logo.png) no-repeat 50% 50%;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff6700;
+}
+
+.info .content .text {
+    padding-left: 67px;
+    color: #b0b0b0;
+}
+
+.info .content .text a {
+    color: #b0b0b0;
+}
+
+.info .content .text p {
+    line-height: 18px;
+    color: #b0b0b0;
+}
+
+.info .content .text p a {
+    color: #757575;
+}
+
+.info .content .text .tt a {
+    color: #b0b0b0;
+}
+
+.info .content .text p span {
+    margin: 0 .25em;
+}
+
+.info .content .link {
+    height: 28px;
+    margin: 4px 0 0;
+    padding-left: 67px;
+}
+
+.info .content .link img {
+    height: 28px;
+    margin-bottom: 15px;
+}
+
+.info .slogan {
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../小米首页/img/slogan.png);
+}
+
+.fix {
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 999999;
+    border-top: 1px solid #f5f5f5;
+}
+
+.fix li {
+    position: relative;
+    display: block;
+    width: 82px;
+    height: 90px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-top: none;
+    text-align: center;
+}
+
+.fix li:hover {
+    color: #ff6700;
+}
+
+.fix li:hover div {
+    color: #ff6700;
+}
+
+.fix li div {
+    text-align: center;
+    font-size: 35px;
+    width: 82px;
+    margin: 10px auto;
+    color: #757575;
+}
+
+.fix li div p {
+    margin: 8px 0 0 0;
+    color: #757575;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fix .backtop {
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.fix li a {
+    color: #757575;
+}
+
+.fix li:hover a p {
+    color: #ff6700;
+}

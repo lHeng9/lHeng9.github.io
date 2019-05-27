@@ -1,0 +1,535 @@
+.main2 {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.homemain {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.homemain h2 {
+    width: 1226px;
+    line-height: 58px;
+    display: block;
+}
+
+.homemain h2 .lf {
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+
+.homemain h2 .rt {
+    float: right;
+    font-size: 16px;
+    color: #424242;
+    font-weight: 300;
+}
+
+.homemain h2 .rt nav a {
+    margin: 0 0 0 30px;
+    color: #424242;
+    font-size: 16px;
+}
+
+.homemain h2 .rt nav .active {
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+}
+
+.homemain h2 .rt nav a:hover {
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+}
+
+.homemain h2 .rt:hover,
+.homemain h2 .rt:hover .fa-chevron-circle-right {
+    color: #ff6700;
+}
+
+.homemain h2 .rt .fa-chevron-circle-right {
+    color: #b0b0b0;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.homemain .main {
+    width: 1226px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-color: transparent;
+}
+
+.homemain .main .lf {
+    float: left;
+    width: 234px;
+    height: 614px;
+}
+
+.homemain .main .lf li {
+    position: relative;
+    background-color: transparent;
+}
+
+.homemain .main .lf .li2 {
+    margin-top: 12px;
+}
+
+.homemain .main .lf li img {
+    width: 234px;
+}
+
+.homemain .main .lf img {
+    width: 100%;
+    height: 100%;
+}
+
+.homemain .main .rt li {
+    width: 234px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    /* border: 1px solid red; */
+    padding: 34px 0 20px 0;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.homemain .main li:hover {
+    z-index: 2;
+    top: -2px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.homemain .main .rt li .wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 174px;
+    height: 58px;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    padding: 8px 30px;
+    display: none;
+}
+
+.homemain .main .rt li:hover .wrap {
+    display: block;
+}
+
+.homemain .main .rt li .wrap .report {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.homemain .main .rt li .wrap .author {
+    color: rgba(255, 255, 255, 0.6);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.homemain .main .rt li .flag {
+    text-align: center;
+    position: absolute;
+    width: 64px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    background-color: #83c44e;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: -32px;
+    color: #fff;
+}
+
+.homemain .main .rt li .f2 {
+    background-color: #e53935;
+}
+
+.homemain .main .rt li img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 18px;
+}
+
+.homemain .main .rt li h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.homemain .main .rt li p {
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    overflow: hidden;
+    color: #b0b0b0;
+}
+
+.homemain .main .rt li p span {
+    text-align: center;
+    font-size: 14px;
+    color: #ff6700;
+}
+
+.homemain .main .rt li p .s1 {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.homemain .main .rt .last {
+    background-color: transparent;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.homemain .main .rt .last li {
+    padding: 50px 0 0;
+    /* border: 1px solid red; */
+    font-size: 14px;
+    height: 93px;
+}
+
+.homemain .main .rt .last li div {
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    width: 80px;
+    height: 80px;
+}
+
+.homemain .main .rt .last li div img {
+    width: 80px;
+    height: 80px;
+}
+
+.homemain .main .rt .last li h3 {
+    margin: 0 119px 0 30px;
+}
+
+.homemain .main .rt .last li p {
+    margin: 0 157px 0 30px;
+}
+
+.homemain .main .rt .last li .fa-arrow-circle-o-right {
+    font-size: 60px;
+    line-height: 80px;
+    color: #ff6700;
+    /* margin-left: 20px; */
+    /* text-align: center; */
+}
+
+.homemain .main .rt .last li a {
+    display: block;
+    margin: 0 110px 0 30px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.homemain .main .rt .last li a span small {
+    font-size: 12px;
+    color: #757575;
+}
+
+.frash2 {
+    width: 1226px;
+    margin: 28px auto 22px;
+    height: 120px;
+}
+
+.frash2 img {
+    width: 1226px;
+}
+
+.homemain .main .rt .recommend {
+    margin-left: 0;
+}
+
+.homemain h2 .rtdemo .btn span {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    float: left;
+    margin-top: 16px;
+    color: #b0b0b0;
+}
+
+.homemain h2 .rtdemo .btn .fa-chevron-left {
+    border-right: 0;
+}
+
+.homemain .main .hot {
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 415px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+}
+
+.homemain .main .first {
+    margin-left: 0 !important;
+}
+
+.homemain .main .hot img {
+    width: 296px;
+    height: 220px;
+    margin: 0 0 28px;
+}
+
+.homemain .main .hot .review {
+    height: 72px;
+    margin: 0 28px 22px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    overflow: hidden;
+    color: #333;
+}
+
+.homemain .main .hot .review a {
+    color: #333;
+}
+
+.homemain .main .hot .auth {
+    position: relative;
+    height: 18px;
+    margin: 0 28px 8px;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.homemain .main .hot div {
+    margin: 0 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.homemain .main .hot div h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+}
+
+.homemain .main .hot div span {
+    color: #e0e0e0;
+}
+
+.homemain .main .hot div p {
+    display: inline;
+    margin: 0;
+    color: #ff6700;
+}
+
+.homemain .main .content {
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 374px;
+    padding: 45px 0 0;
+    border-top: 1px solid #e0e0e0;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+}
+
+.homemain .main .book {
+    border-top-color: #ffac13;
+    color: #ffac13;
+    margin-left: 0;
+}
+
+.homemain .main .book2 {
+    border-top-color: #83c44e;
+    color: #83c44e;
+}
+
+.homemain .main .book3 {
+    border-top-color: #e53935;
+    color: #e53935;
+}
+
+.homemain .main .book4 {
+    border-top-color: #2196f3;
+    color: #2196f3;
+}
+
+.homemain .main h2 {
+    margin: 0 10px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    width: 276px;
+    height: 24px;
+}
+
+.homemain .main div h4 {
+    margin: 0 20px 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    color: #333;
+}
+
+.homemain .main div .desc {
+    margin: 0 48px 10px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    color: #b0b0b0;
+}
+
+.homemain .main div .price {
+    height: 21px;
+    margin: 0 10px 15px;
+    text-align: center;
+    color: #333;
+}
+
+.homemain .main div div {
+    width: 216px;
+    height: 154px;
+    margin: 0 auto;
+}
+
+.homemain .main div div img {
+    width: 216px;
+    height: 154px;
+}
+
+.homemain .main .content .btm {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 296px;
+    text-align: center;
+}
+
+.homemain .main .content .btm div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 0 2px;
+}
+
+.homemain .main .content .btm div .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: #b0b0b0;
+}
+
+.homemain .main .content .btm div .dotactive {
+    border-color: #ff6700;
+    background-color: #fff;
+}
+
+.homemain .main .video {
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 285px;
+    margin-left: 14px;
+    margin-bottom: 52px;
+    text-align: center;
+    background: #fff;
+}
+
+.homemain .main .video div {
+    position: relative;
+    width: 296px;
+    height: 180px;
+    margin: 0 0 28px;
+}
+
+.homemain .main .video div img {
+    width: 296px;
+    height: 180px;
+}
+
+.homemain .main .video div span {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 32px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    line-height: 20px;
+    margin: auto 0;
+    padding-bottom: 5px;
+}
+
+.homemain .main .video div span:hover {
+    background-color: #ff6700;
+}
+
+.homemain .main .video div span i {
+    font-size: 10px;
+    /* margin-bottom: 10px; */
+    line-height: 20px;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+}
+
+.homemain .main .video .title {
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+}
+
+.homemain .main .video .desc {
+    height: 18px;
+    margin: 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
