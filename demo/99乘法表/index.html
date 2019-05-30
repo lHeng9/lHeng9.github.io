@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            border: 0;
+        }
+        
+        table td {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 0;
+            animation: change 0.8s linear forwards;
+            opacity: 0;
+        }
+        
+        @keyframes change {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var n = 9
+        document.write('<table  border=1>')
+
+        function random() {
+            return `rgba(${Math.random()*256+1},${Math.random()*256+1},${Math.random()*256+1},${Math.random()})`
+        }
+        for (let i = 1; i <= n; i++) {
+            document.write('<tr >')
+            for (let j = 1; j <= i; j++) {
+                let rs = i * j
+                document.write(`<td class='box' style='animation-delay:${(i+j)*0.2}s;background-color:${random()}'>${i}*${j}=${rs}</td>`)
+            }
+            document.write('</tr>')
+        }
+    </script>
+</body>
+
+</html>
