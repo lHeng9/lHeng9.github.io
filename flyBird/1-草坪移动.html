@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wrap {
+            width: 343px;
+            height: 480px;
+            background: url(img/bg.jpg) 0 0 no-repeat;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wrap .grass {
+            /* border: 1px solid red; */
+            position: absolute;
+            bottom: 42px;
+            left: 0;
+            width: 800px;
+        }
+        
+        .wrap .grass img {
+            width: 343px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 草坪 -->
+        <div class="grass">
+            <img src="img/banner.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        var wrap = document.getElementsByClassName('wrap')[0]
+        var grass = document.getElementsByClassName('grass')[0]
+        grass.innerHTML += grass.innerHTML
+        var index = 0 //记录grass的left
+        setInterval(() => {
+            index += 2
+            if (index > 343) {
+                index = 0
+            }
+            grass.style.left = -index + 'px'
+        }, 15);
+    </script>
+</body>
+
+</html>

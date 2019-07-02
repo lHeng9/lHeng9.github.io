@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wrap {
+            width: 343px;
+            height: 480px;
+            background: url(img/bg.jpg) 0 0 no-repeat;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wrap .grass {
+            /* border: 1px solid red; */
+            position: absolute;
+            bottom: 42px;
+            left: 0;
+            width: 800px;
+        }
+        
+        .wrap .grass img {
+            width: 343px;
+            float: left;
+        }
+        
+        .bird {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            /* right: 0; */
+            /* border: 1px solid red; */
+        }
+        
+        .bird img {
+            vertical-align: top;
+            /* 去除图片上下间隙 top bottom 都可以 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <!-- bird -->
+        <div class="bird">
+            <img src="img/bird0.png" alt="">
+        </div>
+        <!-- 草坪 -->
+        <div class="grass">
+            <img src="img/banner.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        var wrap = document.getElementsByClassName('wrap')[0]
+        var grass = document.getElementsByClassName('grass')[0]
+        grass.innerHTML += grass.innerHTML
+        var index = 0 //记录grass的left
+        setInterval(() => {
+            index += 2
+            if (index > 343) {
+                index = 0
+            }
+            grass.style.left = -index + 'px'
+        }, 15);
+
+
+
+        // 小bird
+        var bird = document.getElementsByClassName('bird')[0]
+            // 小鸟的图片。
+        bird.birdImg = bird.getElementsByTagName('img')[0]
+        bird.speed = 0; //记录速度
+        var pres = 0 //记录上一次的位置
+        bird.timer = setInterval(() => {
+            // 增加速度
+            bird.speed += 0.5
+                // 为了速度的合理性
+            if (bird.speed >= 10) {
+                bird.speed = 10
+            }
+            // 设置小鸟距离顶部的位置
+            var birdTop = bird.offsetTop + bird.speed
+                // 判断这次小鸟飞翔的状态
+            if (birdTop > pres) {
+                // 下落
+                bird.birdImg.src = 'img/down_bird1.png'
+            } else {
+                // 上升
+                bird.birdImg.src = 'img/up_bird1.png'
+            }
+            //设置小鸟距离顶部和底部草坪的合理值
+            if (birdTop <= 0) {
+                bird.birdImg.src = 'img/bird1.png'
+                clearInterval(bird.timer)
+                alert('die')
+            }
+            if (birdTop >= 403) {
+                bird.birdImg.src = 'img/bird1.png'
+                clearInterval(bird.timer)
+                alert('die')
+            }
+            // 设置小鸟的位置  top值
+            bird.style.top = birdTop + 'px'
+                // 记录上一次的top值
+            pres = birdTop
+        }, 30);
+
+        // 点击wrap，让小鸟飞翔
+        wrap.onclick = function() {
+            bird.speed = -10
+        }
+    </script>
+</body>
+
+</html>

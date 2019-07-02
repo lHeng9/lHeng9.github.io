@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <img src="img/bird.png" alt="">
+        </div>
+        <div class="startButton">
+            <img src="img/start.jpg" alt="">
+        </div>
+        <div id="endMenu">
+            <img src="img/message.jpg">
+            <!-- 显示分数 -->
+            <span id="currentScore">
+                0
+            </span>
+            <!-- 显示历史最高分 -->
+            <span id="bestScore">
+                0
+            </span>
+            <img src="img/photo1.jpg" id="photo">
+        </div>
+        <!-- 管道 -->
+        <ul id="pipes">
+            <!-- 一个li代表一组管道 -->
+            <!-- <li class="pipe">
+                <div class="upPipe"></div>
+                <div class="downPipe"></div>
+            </li> -->
+        </ul>
+        <!-- 设置小鸟 -->
+        <img src="img/bird.png" id="bird">
+        <!-- 设置记录分数的图片 -->
+        <div id="score">
+            <img src="img/0.jpg">
+        </div>
+        <!-- 滚动的草坪 -->
+        <div id="grass">
+            <img src="img/banner.jpg">
+            <img src="img/banner.jpg">
+        </div>
+        <!-- 背景音乐 -->
+        <audio id="gameMusic" src="musics/game_music.mp3"></audio>
+        <!-- 飞翔音乐 -->
+        <audio id="bulletMusic" src="musics/bullet.mp3"></audio>
+        <audio id="gameover" src="musics/game_over.mp3"></audio>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

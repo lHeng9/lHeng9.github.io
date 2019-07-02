@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .left {
+            width: 300px;
+            height: 303px;
+            /* border: 1px solid red; */
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .left img {
+            width: 100%;
+        }
+        
+        .left .box {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 200, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        .right {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 340px;
+            top: 20px;
+            /* border: 1px solid red; */
+            overflow: hidden;
+            display: none;
+        }
+        /* 和滑块滑动距离成比例 */
+        
+        .right img {
+            width: 1500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="imgs/small.png" alt="">
+        <div class="box"></div>
+    </div>
+    <div class="right">
+        <img src="imgs/big.png" alt="" id="big">
+    </div>
+    <script>
+        var box = document.getElementsByClassName('box')[0]
+        var lf = document.getElementsByClassName('left')[0]
+        var rt = document.getElementsByClassName('right')[0]
+        var rImg = document.getElementById('big')
+        lf.onmouseover = function() {
+            box.style.display = 'block'
+            rt.style.display = 'block'
+        }
+        lf.onmousemove = function(e) {
+            var e = window.event || e
+            var x = e.clientX - lf.offsetLeft - box.offsetWidth / 2
+            var y = e.clientY - lf.offsetTop - box.offsetHeight / 2
+                // 为了不让滑块划出，设置临界值
+            var maxX = lf.offsetWidth - box.offsetWidth
+            var maxY = lf.offsetHeight - box.offsetHeight
+
+            if (x < 0) {
+                x = 0
+            }
+            if (x > maxX) {
+                x = maxX
+            }
+            if (y < 0) {
+                y = 0
+            }
+            if (y > maxY) {
+                y = maxY
+            }
+
+            // 修改右侧图片位置
+            rImg.style.left = -5 * x + 'px'
+            rImg.style.top = -5 * y + 'px'
+
+            console.log(x, y);
+            box.style.display = 'block'
+            rt.style.display = 'block'
+            box.style.left = x + 'px'
+            box.style.top = y + 'px'
+
+            // function 2 使用滚动距离
+            // rImg.scrollLeft = -5 * x + 'px'
+            // rImg.scrollTop = -5 * y + 'px'
+
+
+        }
+        lf.onmouseleave = function() {
+            box.style.display = 'none'
+            rt.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
