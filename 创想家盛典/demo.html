@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div class="show">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/slhins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/niuins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/gongyanins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/anuoins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/wzins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/wqigins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/madongins.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/wxfins.png" alt="">
+                </div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <script src="js/jqfloat.min.js"></script>
+    <script src="js/touch-0.2.14.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            var mySwiper = new Swiper('.swiper-container', {
+                // loop: true, // 循环模式选
+                // // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // autoplay: true
+
+            })
+        }
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
